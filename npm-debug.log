@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'npmtest',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.8
+3 info using node@v4.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData npmtest
+8 silly fetchNamedPackageData npmtest
+9 silly mapToRegistry name npmtest
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://localhost:15443/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'npmtest',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'npmtest',
+12 silly mapToRegistry   name: 'npmtest',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://localhost:15443/npmtest
+14 verbose request uri http://localhost:15443/npmtest
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 3:39:19 PM
+17 verbose request id edabf6fafca36ac3
+18 http request GET http://localhost:15443/npmtest
+19 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+20 info attempt registry request try #2 at 3:39:29 PM
+21 http request GET http://localhost:15443/npmtest
+22 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+23 info attempt registry request try #3 at 3:40:29 PM
+24 http request GET http://localhost:15443/npmtest
+25 silly fetchPackageMetaData Error: connect ECONNREFUSED 127.0.0.1:15443
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:907:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:930:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1077:14)
+25 silly fetchPackageMetaData  error for npmtest { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+25 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   syscall: 'connect',
+25 silly fetchPackageMetaData   address: '127.0.0.1',
+25 silly fetchPackageMetaData   port: 15443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ECONNREFUSED 127.0.0.1:15443
+30 verbose stack     at Object.exports._errnoException (util.js:907:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:930:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1077:14)
+31 verbose cwd /home/ubuntu/workspace/npmTest
+32 error Linux 4.2.0-c9
+33 error argv "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm" "install" "npmtest" "--save"
+34 error node v4.5.0
+35 error npm  v3.10.8
+36 error code ECONNREFUSED
+37 error errno ECONNREFUSED
+38 error syscall connect
+39 error Error: connect ECONNREFUSED 127.0.0.1:15443
+39 error     at Object.exports._errnoException (util.js:907:11)
+39 error     at exports._exceptionWithHostPort (util.js:930:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1077:14)
+39 error  { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+39 error   code: 'ECONNREFUSED',
+39 error   errno: 'ECONNREFUSED',
+39 error   syscall: 'connect',
+39 error   address: '127.0.0.1',
+39 error   port: 15443 }
+40 error If you are behind a proxy, please make sure that the
+40 error 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
