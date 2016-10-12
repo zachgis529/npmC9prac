@@ -1,0 +1,9 @@
+:q
+:Q
+q
+c
+exit
+;;:
+:q!
+:quite
+:quit

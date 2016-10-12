@@ -11,5 +11,8 @@
     "url": "https://github.com/zachgis529/npmC9prac.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
 }
